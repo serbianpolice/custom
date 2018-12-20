@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "serbianpolice";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,14 +46,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: 'basicBot',
+        botName: 'V',
         language: 'english',
-        chatLink: 'https://rawgit.com/basicBot/source/master/lang/en.json',
-        scriptLink: 'https://rawgit.com/basicBot/source/master/basicBot.js',
+        chatLink: 'https://rawgit.com/serbianpolice/source/master/lang/en.json',
+        scriptLink: 'https://rawgit.com/serbianpolice/source/master/basicBot.js',
         roomLock: false, // Requires an extension to re-load the script
         startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupVolume: 100, // 0-100
+        startupEmoji: true, // true or false
         autowoot: true,
         autoskip: false,
         smartSkip: true,
@@ -88,6 +88,7 @@
             ['sound', 'The song you played had bad sound quality or no sound. '],
             ['nsfw', 'The song you contained was NSFW (image or sound). '],
             ['unavailable', 'The song you played was not available for some users. ']
+            ['menko', 'Its menko fault']
         ],
         afkpositionCheck: 15,
         afkRankCheck: 'ambassador',
@@ -108,13 +109,13 @@
         songstats: true,
         commandLiteral: '!',
         blacklists: {
-            NSFW: 'https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json',
-            OP: 'https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json',
-            BANNED: 'https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json'
+            NSFW: 'https://rawgit.com/serbianpolice/custom/master/blacklists/NSFWlist.json',
+            OP: 'https://rawgit.com/serbianpolice/custom/master/blacklists/OPlist.json',
+            BANNED: 'https://rawgit.com/serbianpolice/custom/master/blacklists/BANNEDlist.json'
         }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/serbianpolice/source/master/V.js", extend);
 
 }).call(this);
