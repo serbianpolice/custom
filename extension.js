@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: 'V',
+        botName: 'basicBot',
         language: 'english',
         chatLink: 'https://rawgit.com/serbianpolice/source/master/lang/en.json',
         scriptLink: 'https://rawgit.com/serbianpolice/source/master/basicBot.js',
@@ -116,6 +116,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/serbianpolice/source/master/V.js", extend);
+    $.getScript("https://rawgit.com/serbianpolice/source/master/basicBot.js", extend);
 
 }).call(this);
