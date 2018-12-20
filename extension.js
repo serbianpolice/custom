@@ -116,6 +116,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://github.com/serbianpolice/custom/extension.js", extend);
 
 }).call(this);
