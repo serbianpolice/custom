@@ -51,7 +51,7 @@
         chatLink: 'https://rawgit.com/basicBot/source/master/lang/en.json',
         scriptLink: 'https://rawgit.com/basicBot/source/master/basicBot.js',
         roomLock: false, // Requires an extension to re-load the script
-        startupCap: 1, // 1-200
+        startupCap: 10, // 1-200
         startupVolume: 100, // 0-100
         startupEmoji: true, // true or false
         autowoot: true,
@@ -77,8 +77,8 @@
         autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        thorCommand: false,
-        thorCooldown: 10,
+        thorCommand: true,
+        thorCooldown: 5,
         skipPosition: 3,
         skipReasons: [
             ['theme', 'This song does not fit the room theme. '],
